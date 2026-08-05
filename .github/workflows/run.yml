@@ -17,8 +17,8 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install Dependencies
-        run: npm install --ignore-scripts=false
+      - name: Force Install Bedrock Protocol
+        run: npm install bedrock-protocol@latest
 
       - name: Run Bot
         run: node bot.js
